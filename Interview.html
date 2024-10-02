@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses After 12th</title>
+    <link rel="stylesheet" href="Interview.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .tech{
+            text-align: center;
+            padding:30px;
+        }
+        .course{
+            font-size: 19px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            z-index: 1000;
+            overflow-y: auto; 
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%; 
+            max-width: 1200px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            max-height: 90vh; 
+            overflow-y: auto; 
+            
+        }
+
+        .modal-content h1, h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+
+        }
+
+        .modal-content ul {
+            list-style-type: disc; 
+            padding-left: 40px; 
+        }
+
+        .modal-content ul li {
+            display: block; 
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #333;
+           
+            border:none;
+            border-radius: 3px;
+            padding-bottom: 4px;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="way.html"><img src="../IMAGES/white.png" alt="Logo" height="60px" width="60px"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../HTML/way.html">Home</a></li>
+                <li><a href="../HTML/courses.html">Courses</a></li>
+                <li><a href="../HTML/govtjobs.html">Government Jobs</a></li>
+                <li><a href="../HTML/careers.html">Careers</a></li>
+                <li><a href="../HTML/roadmaps.html">Road Maps</a></li>
+                <li><a href="../HTML/interview.html">Interview Questions</a></li>
+                <li><a href="../HTML/romap.html">Q&A</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-btn">Go</button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Explore Various Domains</h1>
+        <p>Ace your interviews with our ultimate prep guide, crafted to enhance your expertise and confidence</p>
+    </div>
+
+    <div class="tech">
+        <h3><b>TECHNICAL DOMAINS</b></h3>
+    </div>
+
+    <section>
+        <div class="course" id="webdev">
+            <h2>Web Development</h2>
+            <p>Web development involves creating and maintaining websites and web applications.</p>
+            <button class="toggle-btn" data-target="webdev-modal">Read More</button>
+        </div>
+        
+        <div class="course" id="data">
+            <h2>Data Science</h2>
+            <p>Data science involves extracting insights and knowledge from data using statistical methods.</p>
+            <button class="toggle-btn" data-target="data-modal">Read More</button>
+        </div>
+
+        <div class="course" id="cyber">
+            <h2>Cyber Security</h2>
+            <p>Cybersecurity involves protecting systems, networks, and data from digital attacks.</p>
+            <button class="toggle-btn" data-target="cyber-modal">Read More</button>
+        </div>
+        <div class="course" id="devOps">
+            <h2>DevOps</h2>
+            <p>DevOps is a collaborative approach that integrates development and operations teams to improve software delivery and performance</p>
+            <button class="toggle-btn" data-target="devOps-modal">Read More</button>
+        </div>
+        
+        <div class="course" id="ds">
+            <h2>Data structures</h2>
+            <p>Data structures are specialized formats for organizing , processing and storing data effeciently</p>
+            <button class="toggle-btn" data-target="ds-modal">Read More</button>
+        </div>
+        
+        <div class="course" id="ml">
+            <h2>Machine Learning</h2>
+            <p>Machine Learning enables computers to learn from data and improve their performance over time without being explicitly programmed</p>
+            <button class="toggle-btn" data-target="ml-modal">Read More</button>
+        </div>
+        
+        <div class="course" id="softdev">
+            <h2>Software Developer</h2>
+            <p>A software developer designs,builds and maintains applications and systems to solve problems and enhance user experiences</p>
+            <button class="toggle-btn" data-target="softdev-modal">Read More</button>
+        </div>
+    </section>
+<!------------------------------------------------------------------------------------------->
+    <!-- Modal Sections -->
+    <div class="modal" id="webdev-modal">
+        <div class="modal-content">
+            <button class="close-btn" data-close="webdev-modal">&times;</button>
+            <div class="header">
+                <style>
+                    .header {
+                            background-color: #F3A953;
+                            color: white;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 16px;
+                            margin-left:30px;
+                            margin-right:30px;
+                            margin-top:50px;
+                            margin-bottom:20px;
+                        }
+                        .container {
+                              padding: 20px;
+                         }
+    
+                        .exam-section {
+                         margin-bottom: 40px;
+                        }
+               </style>
+               <header>
+                <h1>Web Development Interview Questions</h1>
+                <p>Explore various company-wise interview questions asked in the domain of Web Development</p>
+               </header>
+            </div>
+          
+
+            <!-- Front-End Questions -->
+            <h2>Front-End Development Questions</h2>
+    
+            <!-- Google Front-End Questions -->
+            <h3>Google</h3>
+            <ul>
+                <li>How does the Virtual DOM work in React?</li>
+                <li>Explain CSS specificity and how it works.</li>
+                <li>What are the differences between Flexbox and CSS Grid?</li>
+                <li>How does browser rendering work, and how can you optimize page load time?</li>
+                <li>Explain the box model in CSS and how to modify its behavior using `box-sizing` property.</li>
+            </ul>
+    
+            <!-- Facebook Front-End Questions -->
+            <h3>Facebook</h3>
+            <ul>
+                <li>What is the difference between `==` and `===` in JavaScript?</li>
+                <li>How would you debounce a search input field in React?</li>
+                <li>Explain the event delegation model in JavaScript.</li>
+                <li>What are web workers and how do they improve performance?</li>
+                <li>How does Flexbox differ from grid layout, and when would you use one over the other?</li>
+            </ul>
+    
+            <!-- Back-End Development Questions -->
+            <h2>Back-End Development Questions</h2>
+    
+            <!-- Amazon Back-End Questions -->
+            <h3>Amazon</h3>
+            <ul>
+                <li>How do you design a RESTful API?</li>
+                <li>What is the difference between SQL and NoSQL databases, and when would you use each?</li>
+                <li>Explain the purpose of middleware in Node.js and how to implement it.</li>
+                <li>What is the difference between authentication and authorization?</li>
+                <li>How would you scale a Node.js application to handle a high number of requests?</li>
+            </ul>
+    
+            <!-- Netflix Back-End Questions -->
+            <h3>Netflix</h3>
+            <ul>
+                <li>What is the difference between monolithic and microservices architecture?</li>
+                <li>How does caching improve the performance of web applications, and what tools can be used for it?</li>
+                <li>Explain the role of Load Balancers in a distributed system.</li>
+                <li>How do you implement server-side rendering in Node.js?</li>
+                <li>What are WebSockets, and how do they work?</li>
+            </ul>
+    
+            <!-- Version Control System Questions -->
+            <h2>Version Control Systems (Git/GitHub) Questions</h2>
+    
+            <!-- Microsoft VCS Questions -->
+            <h3>Microsoft</h3>
+            <ul>
+                <li>What is the difference between `git merge` and `git rebase`?</li>
+                <li>Explain the process of resolving merge conflicts in Git.</li>
+                <li>How do you revert a commit that has already been pushed and made public?</li>
+                <li>How would you handle branching strategies for multiple developers working on the same project?</li>
+                <li>Explain the difference between `git pull` and `git fetch`.</li>
+            </ul>
+    
+            <!-- Uber VCS Questions -->
+            <h3>Uber</h3>
+            <ul>
+                <li>How would you perform a code review using GitHub Pull Requests?</li>
+                <li>What are Git tags, and how do you use them in the release process?</li>
+                <li>How do you squash multiple commits into a single commit in Git?</li>
+                <li>Explain the importance of Git hooks in enforcing coding standards.</li>
+                <li>What is the purpose of `.gitignore`, and how do you use it effectively?</li>
+            </ul>
+    
+            <!-- Deployment and Hosting Questions -->
+            <h2>Deployment and Hosting Questions</h2>
+    
+            <!-- Amazon Web Services (AWS) Questions -->
+            <h3>Amazon Web Services (AWS)</h3>
+            <ul>
+                <li>Explain the difference between EC2 and Lambda in AWS.</li>
+                <li>How do you use AWS S3 for static website hosting?</li>
+                <li>What are Elastic Load Balancers, and how do they improve fault tolerance?</li>
+                <li>How do you configure AWS CloudFront for global content delivery?</li>
+                <li>What are the advantages of using containers (Docker) in deployment?</li>
+            </ul>
+    
+            <!-- Heroku Hosting Questions -->
+            <h3>Heroku</h3>
+            <ul>
+                <li>What is the difference between buildpacks and add-ons in Heroku?</li>
+                <li>How do you implement continuous integration (CI) and continuous delivery (CD) using Heroku pipelines?</li>
+                <li>Explain how Heroku scales applications horizontally and vertically.</li>
+                <li>How do you deploy a Node.js application to Heroku?</li>
+                <li>What are the limitations of free-tier Heroku dynos?</li>
+            </ul>
+    
+            <!-- Google Cloud Platform (GCP) Questions -->
+            <h3>Google Cloud Platform (GCP)</h3>
+            <ul>
+                <li>How do you deploy a full-stack web application on GCP using App Engine?</li>
+                <li>What is Kubernetes, and how does it help in managing containerized applications?</li>
+                <li>Explain the role of Cloud Load Balancing in improving performance and availability.</li>
+                <li>What are Google Cloud Functions, and how are they used in serverless architectures?</li>
+                <li>How would you use GCP Cloud SQL for database management?</li>
+            </ul>
+    
+        </div>
+        
+    </div>
+    
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------>
+
+    <div class="modal" id="data-modal">
+        <div class="modal-content">
+            <button class="close-btn" data-close="data-modal">&times;</button>
+            <div class="header">
+                <style>
+                    .header {
+                            background-color: #F3A953;
+                            color: white;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 16px;
+                            margin-left:30px;
+                            margin-right:30px;
+                            margin-top:50px;
+                            margin-bottom:20px;
+                        }
+                        .container {
+                              padding: 20px;
+                         }
+    
+                        .exam-section {
+                         margin-bottom: 40px;
+                        }
+               </style>
+               <header>
+                <h1>Data Science Interview Questions</h1>
+                <p>Explore various company-wise interview questions asked in the domain of Data Science</p>
+               </header>
+            </div>
+            
+            
+
+        <!-- Machine Learning Questions -->
+        <h2>Machine Learning Questions</h2>
+
+        <!-- Google Machine Learning Questions -->
+        <h3>Google</h3>
+        <ul>
+            <li>What is the difference between supervised and unsupervised learning?</li>
+            <li>Explain overfitting and underfitting in machine learning models. How can you prevent them?</li>
+            <li>What are decision trees, and how do they work?</li>
+            <li>How does a random forest algorithm improve over a single decision tree?</li>
+            <li>Explain the bias-variance tradeoff.</li>
+        </ul>
+
+        <!-- Facebook Machine Learning Questions -->
+        <h3>Facebook</h3>
+        <ul>
+            <li>Explain how gradient descent works in training machine learning models.</li>
+            <li>What are convolutional neural networks (CNN), and how are they used in image processing?</li>
+            <li>How do you handle class imbalance in classification problems?</li>
+            <li>What are the different types of kernels in support vector machines (SVM)?</li>
+            <li>What are hyperparameters, and how do you tune them in machine learning models?</li>
+        </ul>
+
+        <!-- Statistics and Probability Questions -->
+        <h2>Statistics and Probability Questions</h2>
+
+        <!-- Amazon Statistics Questions -->
+        <h3>Amazon</h3>
+        <ul>
+            <li>What is the central limit theorem, and why is it important in statistics?</li>
+            <li>How do you test the significance of a dataset?</li>
+            <li>Explain p-value and its role in hypothesis testing.</li>
+            <li>What is the difference between Type I and Type II errors in hypothesis testing?</li>
+            <li>How do you calculate the confidence interval for a population mean?</li>
+        </ul>
+
+        <!-- Netflix Statistics Questions -->
+        <h3>Netflix</h3>
+        <ul>
+            <li>What is the difference between correlation and causation?</li>
+            <li>Explain the concept of normal distribution and its applications in data science.</li>
+            <li>How would you calculate the probability of an event occurring using Bayes' theorem?</li>
+            <li>What are z-scores, and how do you use them to detect outliers?</li>
+            <li>How do you perform A/B testing, and what statistical tests are involved?</li>
+        </ul>
+
+        <!-- Data Analysis Questions -->
+        <h2>Data Analysis Questions</h2>
+
+        <!-- Microsoft Data Analysis Questions -->
+        <h3>Microsoft</h3>
+        <ul>
+            <li>How would you handle missing or corrupted data in a dataset?</li>
+            <li>Explain the difference between a histogram and a boxplot and when you would use each.</li>
+            <li>What are the key steps in the data preprocessing pipeline?</li>
+            <li>How do you standardize or normalize data, and when is each technique appropriate?</li>
+            <li>What is the importance of feature scaling in machine learning?</li>
+        </ul>
+
+        <!-- Uber Data Analysis Questions -->
+        <h3>Uber</h3>
+        <ul>
+            <li>How would you go about cleaning a large dataset with mixed data types?</li>
+            <li>Explain the difference between dimensionality reduction techniques like PCA and t-SNE.</li>
+            <li>How would you create a data visualization to explain complex findings to non-technical stakeholders?</li>
+            <li>What are the pros and cons of using SQL for data analysis compared to Python or R?</li>
+            <li>How do you ensure data integrity and accuracy throughout your analysis?</li>
+        </ul>
+
+        <!-- Big Data and Tools Questions -->
+        <h2>Big Data and Tools Questions</h2>
+
+        <!-- IBM Big Data Questions -->
+        <h3>IBM</h3>
+        <ul>
+            <li>What is Hadoop, and how does it work in a distributed computing environment?</li>
+            <li>Explain the difference between HDFS and MapReduce.</li>
+            <li>How does Spark improve over Hadoop for big data processing?</li>
+            <li>What are the key components of the Hadoop ecosystem?</li>
+            <li>Explain the role of Apache Kafka in real-time data processing.</li>
+        </ul>
+
+        <!-- Airbnb Big Data Questions -->
+        <h3>Airbnb</h3>
+        <ul>
+            <li>What is the role of data partitioning in distributed systems like Hadoop and Spark?</li>
+            <li>How do you optimize a large-scale data pipeline for performance and efficiency?</li>
+            <li>Explain how Apache Hive is used for querying large datasets.</li>
+            <li>What are the differences between OLAP and OLTP systems?</li>
+            <li>How would you store and retrieve unstructured data in a NoSQL database?</li>
+        </ul>
+
+    </div>
+</div>
+        </div>
+    </div>
+<!-------------------------------------------------------------------------------------------------------->
+    <div class="modal" id="cyber-modal">
+        <div class="modal-content">
+            <button class="close-btn" data-close="cyber-modal">&times;</button>
+            <div class="header">
+                <style>
+                    .header {
+                            background-color: #F3A953;
+                            color: white;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 16px;
+                            margin-left:30px;
+                            margin-right:30px;
+                            margin-top:50px;
+                            margin-bottom:20px;
+                        }
+                        .container {
+                              padding: 20px;
+                         }
+    
+                        .exam-section {
+                         margin-bottom: 40px;
+                        }
+               </style>
+               <header>
+                <h1>Cybersecurity Interview Questions</h1>
+                <p>Explore various company-wise interview questions asked in the domain of Cyber Security</p>
+               </header>
+            </div>
+            
+
+            <!-- Cryptography Questions -->
+            <h2>Cryptography Questions</h2>
+    
+            <!-- Google Cryptography Questions -->
+            <h3>Google</h3>
+            <ul>
+                <li>What is the difference between symmetric and asymmetric encryption?</li>
+                <li>Explain how RSA encryption works and its use cases.</li>
+                <li>What are block ciphers and stream ciphers? Provide examples of each.</li>
+                <li>What is a digital signature and how does it ensure data integrity?</li>
+                <li>Explain the concept of a Public Key Infrastructure (PKI).</li>
+            </ul>
+    
+            <!-- Facebook Cryptography Questions -->
+            <h3>Facebook</h3>
+            <ul>
+                <li>What is the difference between hashing and encryption?</li>
+                <li>Explain how SSL/TLS encryption secures data in transit over the internet.</li>
+                <li>What is the purpose of Diffie-Hellman key exchange, and how does it work?</li>
+                <li>How does AES (Advanced Encryption Standard) work, and why is it commonly used?</li>
+                <li>What are the potential vulnerabilities in cryptographic systems?</li>
+            </ul>
+    
+            <!-- Network Security Questions -->
+            <h2>Network Security Questions</h2>
+    
+            <!-- Amazon Network Security Questions -->
+            <h3>Amazon</h3>
+            <ul>
+                <li>What is the difference between a firewall and an intrusion detection system (IDS)?</li>
+                <li>Explain how VPNs (Virtual Private Networks) work and why they are used in organizations.</li>
+                <li>What are the differences between TCP and UDP, and when would you use each?</li>
+                <li>How do you mitigate DDoS (Distributed Denial of Service) attacks?</li>
+                <li>Explain the different types of network attacks such as IP spoofing, session hijacking, and man-in-the-middle attacks.</li>
+            </ul>
+    
+            <!-- Cisco Network Security Questions -->
+            <h3>Cisco</h3>
+            <ul>
+                <li>What is Network Address Translation (NAT), and how does it work?</li>
+                <li>What is port scanning, and how can you prevent it?</li>
+                <li>Explain the role of Secure Shell (SSH) in securing network communications.</li>
+                <li>What are VLANs (Virtual Local Area Networks), and how do they enhance network security?</li>
+                <li>How do you implement secure configurations for routers and switches in an enterprise network?</li>
+            </ul>
+    
+            <!-- Threat Detection and Prevention Questions -->
+            <h2>Threat Detection and Prevention Questions</h2>
+    
+            <!-- Microsoft Threat Detection Questions -->
+            <h3>Microsoft</h3>
+            <ul>
+                <li>What is malware, and what are the different types (e.g., ransomware, trojans, spyware)?</li>
+                <li>How do you detect and remove malware from an infected system?</li>
+                <li>What are honeypots, and how are they used in cybersecurity to detect threats?</li>
+                <li>Explain how intrusion detection systems (IDS) and intrusion prevention systems (IPS) differ.</li>
+                <li>How do you secure an organization’s endpoints, such as computers and mobile devices, from external threats?</li>
+            </ul>
+    
+            <!-- IBM Threat Detection Questions -->
+            <h3>IBM</h3>
+            <ul>
+                <li>What is a zero-day vulnerability, and how do you protect systems against it?</li>
+                <li>How would you set up a security monitoring system to detect potential security breaches?</li>
+                <li>What are the best practices for securing cloud infrastructure?</li>
+                <li>Explain how behavioral analysis can be used to detect insider threats.</li>
+                <li>What is the importance of threat intelligence in cybersecurity?</li>
+            </ul>
+    
+            <!-- Incident Response and Recovery Questions -->
+            <h2>Incident Response and Recovery Questions</h2>
+    
+            <!-- Uber Incident Response Questions -->
+            <h3>Uber</h3>
+            <ul>
+                <li>What steps would you take to respond to a data breach in an organization?</li>
+                <li>How would you secure sensitive data after a cybersecurity incident?</li>
+                <li>What are the key components of an incident response plan?</li>
+                <li>Explain the role of digital forensics in investigating cybersecurity incidents.</li>
+                <li>How do you prioritize incidents during a security breach?</li>
+            </ul>
+    
+            <!-- Dropbox Incident Response Questions -->
+            <h3>Dropbox</h3>
+            <ul>
+                <li>What are the different phases of incident handling and response?</li>
+                <li>How do you ensure business continuity during a security incident?</li>
+                <li>What is the role of encryption in preventing data breaches?</li>
+                <li>Explain how you would perform a post-incident analysis to prevent future security incidents.</li>
+                <li>What tools do you use for monitoring and managing incident response?</li>
+            </ul>
+    
+            <!-- Governance, Risk, and Compliance (GRC) Questions -->
+            <h2>Governance, Risk, and Compliance Questions</h2>
+    
+            <!-- Deloitte GRC Questions -->
+            <h3>Deloitte</h3>
+            <ul>
+                <li>What is the role of cybersecurity governance in an organization?</li>
+                <li>How do you assess and mitigate cybersecurity risks?</li>
+                <li>What is GDPR, and how does it affect organizations from a cybersecurity perspective?</li>
+                <li>Explain how you would implement a cybersecurity policy in an organization.</li>
+                <li>What are the key frameworks used in cybersecurity compliance (e.g., NIST, ISO 27001)?</li>
+            </ul>
+    
+            <!-- PwC GRC Questions -->
+            <h3>PwC</h3>
+            <ul>
+                <li>What are the key differences between cybersecurity risk management and IT risk management?</li>
+                <li>How do you perform a cybersecurity audit for an organization?</li>
+                <li>What are the different types of risk assessments conducted in cybersecurity?</li>
+                <li>Explain the role of continuous monitoring in risk management.</li>
+                <li>How do organizations ensure compliance with international cybersecurity regulations?</li>
+            </ul>
+    
+        </div>
+    </div>
+        </div>
+    </div>
+<!--------------------------------------------------------------------------------------------------------->
+<div class="modal" id="devOps-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="devOps-modal">&times;</button>
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                        margin-bottom:20px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+                     margin-bottom: 40px;
+                    }
+           </style>
+           <header>
+            <h1>DevOps Interview Questions</h1>
+            <p>Explore various company-wise interview questions asked in the domain of DevOps</p>
+           </header>
+        </div>
+      
+
+        <!-- CI/CD Pipeline Questions -->
+        <h2>CI/CD Pipeline Questions</h2>
+
+        <!-- Google CI/CD Pipeline Questions -->
+        <h3>Google</h3>
+        <ul>
+            <li>What are the key components of a CI/CD pipeline?</li>
+            <li>How do you ensure zero downtime during deployments?</li>
+            <li>Explain the process of blue-green deployment and its benefits.</li>
+            <li>How do you handle version control in a continuous deployment environment?</li>
+            <li>What strategies can you use to roll back a deployment in case of failure?</li>
+        </ul>
+
+        <!-- Facebook CI/CD Pipeline Questions -->
+        <h3>Facebook</h3>
+        <ul>
+            <li>How do you manage large-scale CI/CD pipelines across multiple teams?</li>
+            <li>What are the main challenges in integrating continuous delivery with legacy systems?</li>
+            <li>How do you ensure that your CI/CD pipeline is secure?</li>
+            <li>Explain how canary deployments work in continuous delivery.</li>
+            <li>What is the difference between continuous integration, delivery, and deployment?</li>
+        </ul>
+
+        <!-- Cloud Infrastructure Questions -->
+        <h2>Cloud Infrastructure Questions</h2>
+
+        <!-- Amazon Cloud Infrastructure Questions -->
+        <h3>Amazon (AWS)</h3>
+        <ul>
+            <li>What are the different types of cloud service models (IaaS, PaaS, SaaS)?</li>
+            <li>How do you set up a VPC (Virtual Private Cloud) in AWS?</li>
+            <li>What is auto-scaling, and how do you configure it in AWS?</li>
+            <li>Explain how security groups and network ACLs work in AWS.</li>
+            <li>What are the key differences between S3, EBS, and EFS for storage in AWS?</li>
+        </ul>
+
+        <!-- Microsoft Azure Cloud Infrastructure Questions -->
+        <h3>Microsoft (Azure)</h3>
+        <ul>
+            <li>How does Azure handle high availability and disaster recovery?</li>
+            <li>Explain how Azure Resource Manager (ARM) templates are used in infrastructure as code (IaC).</li>
+            <li>What are the differences between Azure Functions and AWS Lambda?</li>
+            <li>How do you implement multi-region deployments in Azure?</li>
+            <li>What is the difference between Azure Blob Storage and Azure Files?</li>
+        </ul>
+
+        <!-- Automation & Configuration Management Questions -->
+        <h2>Automation & Configuration Management Questions</h2>
+
+        <!-- Netflix Automation Questions -->
+        <h3>Netflix</h3>
+        <ul>
+            <li>How do you use tools like Ansible, Puppet, or Chef for configuration management?</li>
+            <li>Explain how you would automate the provisioning of infrastructure in the cloud.</li>
+            <li>What are the best practices for writing reusable playbooks in Ansible?</li>
+            <li>How do you ensure consistency across different environments using automation tools?</li>
+            <li>Explain the difference between declarative and imperative configuration management.</li>
+        </ul>
+
+        <!-- LinkedIn Automation Questions -->
+        <h3>LinkedIn</h3>
+        <ul>
+            <li>How do you handle secrets management in automated workflows?</li>
+            <li>What is the role of Infrastructure as Code (IaC) in DevOps automation?</li>
+            <li>How do you integrate Jenkins with tools like Terraform for automated provisioning?</li>
+            <li>Explain how configuration drift can occur and how you prevent it using automation tools.</li>
+            <li>How would you implement infrastructure monitoring as part of your automation pipeline?</li>
+        </ul>
+
+        <!-- Containerization & Orchestration Questions -->
+        <h2>Containerization & Orchestration Questions</h2>
+
+        <!-- Docker Containerization Questions -->
+        <h3>Docker</h3>
+        <ul>
+            <li>What is the difference between Docker images and containers?</li>
+            <li>How do you optimize Docker images to minimize their size?</li>
+            <li>Explain how Docker Compose works and its use cases.</li>
+            <li>How do you handle container security in a production environment?</li>
+            <li>What are the best practices for managing persistent storage in Docker containers?</li>
+        </ul>
+
+        <!-- Kubernetes Orchestration Questions -->
+        <h3>Kubernetes</h3>
+        <ul>
+            <li>What is Kubernetes, and how does it differ from Docker Swarm?</li>
+            <li>Explain the architecture of Kubernetes, including nodes, pods, and clusters.</li>
+            <li>What are the different types of Kubernetes services (ClusterIP, NodePort, LoadBalancer)?</li>
+            <li>How do you implement rolling updates and rollbacks in Kubernetes?</li>
+            <li>What are Helm charts, and how do they simplify Kubernetes management?</li>
+        </ul>
+
+        <!-- Monitoring & Logging Questions -->
+        <h2>Monitoring & Logging Questions</h2>
+
+        <!-- Datadog Monitoring Questions -->
+        <h3>Datadog</h3>
+        <ul>
+            <li>How do you set up monitoring for a distributed microservices architecture?</li>
+            <li>What are the key differences between infrastructure monitoring and application monitoring?</li>
+            <li>Explain how log aggregation works and its importance in a DevOps environment.</li>
+            <li>How do you set up alerting mechanisms in Datadog for system failures?</li>
+            <li>What are the common challenges in monitoring containerized environments?</li>
+        </ul>
+
+        <!-- Splunk Logging Questions -->
+        <h3>Splunk</h3>
+        <ul>
+            <li>How do you handle log analysis in a large-scale distributed system?</li>
+            <li>Explain the role of log indexing in tools like Splunk for real-time monitoring.</li>
+            <li>What are the best practices for setting up dashboards for system health monitoring?</li>
+            <li>How do you implement centralized logging for containers in Kubernetes?</li>
+            <li>What is the role of machine learning in predictive monitoring and anomaly detection?</li>
+        </ul>
+
+        <!-- DevSecOps Questions -->
+        <h2>DevSecOps Questions</h2>
+
+        <!-- Atlassian DevSecOps Questions -->
+        <h3>Atlassian</h3>
+        <ul>
+            <li>What are the key principles of DevSecOps, and how does it differ from traditional DevOps?</li>
+            <li>How do you integrate security into a CI/CD pipeline?</li>
+            <li>What tools do you use for vulnerability scanning in a DevOps workflow?</li>
+            <li>Explain how you would handle secrets management in a DevSecOps environment.</li>
+            <li>How do you ensure compliance with security policies in an automated deployment process?</li>
+        </ul>
+
+        <!-- GitLab DevSecOps Questions -->
+        <h3>GitLab</h3>
+        <ul>
+            <li>What are the best practices for implementing security testing in CI/CD pipelines?</li>
+            <li>How do you perform static and dynamic application security testing (SAST/DAST) in DevOps?</li>
+            <li>What role does container security play in DevSecOps?</li>
+            <li>How do you implement automated vulnerability patching in a DevSecOps workflow?</li>
+            <li>Explain how security audits can be integrated into the development lifecycle using GitLab.</li>
+        </ul>
+
+    </div>
+</div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="modal" id="ds-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="ds-modal">&times;</button>
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                        margin-bottom:20px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+                     margin-bottom: 40px;
+                    }
+           </style>
+           <header>
+            <h1>Data Structures Interview Questions</h1>
+            <p>Explore various company-wise interview questions asked in the domain of Data Structures</p>
+           </header>
+        </div>
+        
+
+        <!-- Google Data Structures Questions -->
+        <h2>Google</h2>
+        <ul>
+            <li>Explain how a HashMap works in Java.</li>
+            <li>What is the difference between a stack and a queue?</li>
+            <li>How would you implement a binary search algorithm?</li>
+            <li>Design an algorithm to detect cycles in a graph.</li>
+            <li>How would you balance a binary search tree?</li>
+            <li>Describe the process of finding the shortest path in an unweighted graph.</li>
+        </ul>
+
+        <!-- Facebook Data Structures Questions -->
+        <h2>Facebook</h2>
+        <ul>
+            <li>How would you reverse a linked list?</li>
+            <li>Explain the time complexities of common sorting algorithms.</li>
+            <li>What is the difference between a binary tree and a binary search tree?</li>
+            <li>How would you implement an LRU cache?</li>
+            <li>Given a list of integers, find all unique pairs that sum up to a target value.</li>
+            <li>What data structures are used for breadth-first search and depth-first search?</li>
+        </ul>
+
+        <!-- Amazon Data Structures Questions -->
+        <h2>Amazon</h2>
+        <ul>
+            <li>How would you find the largest sum contiguous subarray?</li>
+            <li>What are the different types of heaps?</li>
+            <li>Explain how dynamic programming can be used for the knapsack problem.</li>
+            <li>How do you merge two sorted linked lists?</li>
+            <li>What is a trie and how is it useful for search engines?</li>
+            <li>Design a system to find the most frequently occurring element in a stream of data.</li>
+        </ul>
+
+        <!-- Microsoft Data Structures Questions -->
+        <h2>Microsoft</h2>
+        <ul>
+            <li>How would you find the middle element of a linked list in one pass?</li>
+            <li>What is the difference between depth-first search (DFS) and breadth-first search (BFS)?</li>
+            <li>Design a data structure that supports insert, delete, search, and getRandom in constant time.</li>
+            <li>Explain how a trie data structure works.</li>
+            <li>Given a binary tree, print its level order traversal.</li>
+            <li>How would you design a data structure for implementing a priority queue?</li>
+        </ul>
+
+        <!-- Uber Data Structures Questions -->
+        <h2>Uber</h2>
+        <ul>
+            <li>How would you design a min-heap?</li>
+            <li>Explain the time complexity of inserting and deleting from a binary search tree.</li>
+            <li>How would you detect a loop in a linked list?</li>
+            <li>What is the fastest way to find the kth smallest element in an unsorted array?</li>
+            <li>Explain Dijkstra's algorithm for finding the shortest path in a graph.</li>
+            <li>How would you design an efficient data structure for autocomplete suggestions?</li>
+        </ul>
+
+        <!-- Apple Data Structures Questions -->
+        <h2>Apple</h2>
+        <ul>
+            <li>Explain the differences between array-based and linked lists.</li>
+            <li>How would you detect and remove duplicates from an unsorted linked list?</li>
+            <li>Describe a method to perform a post-order traversal on a binary tree.</li>
+            <li>What are red-black trees, and where are they used?</li>
+            <li>How would you implement a stack using queues?</li>
+            <li>What is the advantage of using adjacency lists over adjacency matrices for graph representation?</li>
+        </ul>
+
+        <!-- Netflix Data Structures Questions -->
+        <h2>Netflix</h2>
+        <ul>
+            <li>How would you design a data structure to efficiently serve streaming media content?</li>
+            <li>How would you find the longest increasing subsequence in an array?</li>
+            <li>Explain how you would store and query large sets of data using hash maps.</li>
+            <li>What are bloom filters and where are they used?</li>
+            <li>How would you sort a nearly sorted array?</li>
+            <li>What are skip lists and how do they improve search time?</li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="modal" id="ml-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="ml-modal">&times;</button>
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                        margin-bottom:20px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+                     margin-bottom: 40px;
+                    }
+           </style>
+           <header>
+            <h1>Machine Learning Interview Questions</h1>
+            <p>Explore various company-wise interview questions asked in the domain of machine learning</p>
+           </header>
+        </div>
+      
+
+        <!-- Supervised Learning Questions -->
+        <h2>Supervised Learning Questions</h2>
+
+        <!-- Google Supervised Learning Questions -->
+        <h3>Google</h3>
+        <ul>
+            <li>What is the difference between bias and variance in a model?</li>
+            <li>Explain how decision trees work in supervised learning.</li>
+            <li>How do you handle class imbalance in a dataset?</li>
+            <li>What is the difference between L1 and L2 regularization?</li>
+            <li>How does a Random Forest algorithm differ from a single decision tree?</li>
+        </ul>
+
+        <!-- Facebook Supervised Learning Questions -->
+        <h3>Facebook</h3>
+        <ul>
+            <li>Explain how you would tune hyperparameters in a machine learning model.</li>
+            <li>What are the challenges of overfitting, and how do you prevent it?</li>
+            <li>How does logistic regression differ from linear regression?</li>
+            <li>Describe the process of cross-validation in model selection.</li>
+            <li>How would you evaluate the performance of a classification model?</li>
+        </ul>
+
+        <!-- Unsupervised Learning Questions -->
+        <h2>Unsupervised Learning Questions</h2>
+
+        <!-- Amazon Unsupervised Learning Questions -->
+        <h3>Amazon</h3>
+        <ul>
+            <li>What is K-means clustering, and how does it work?</li>
+            <li>How do you determine the optimal number of clusters in K-means?</li>
+            <li>Explain the difference between hierarchical clustering and K-means clustering.</li>
+            <li>What are the common distance metrics used in clustering algorithms?</li>
+            <li>How do you evaluate the performance of clustering models?</li>
+        </ul>
+
+        <!-- Microsoft Unsupervised Learning Questions -->
+        <h3>Microsoft</h3>
+        <ul>
+            <li>Explain principal component analysis (PCA) and how it is used in dimensionality reduction.</li>
+            <li>What is the difference between PCA and Linear Discriminant Analysis (LDA)?</li>
+            <li>How would you handle missing data in an unsupervised learning problem?</li>
+            <li>Describe how density-based clustering (DBSCAN) works.</li>
+            <li>What are autoencoders, and how are they used in unsupervised learning?</li>
+        </ul>
+
+        <!-- Deep Learning Questions -->
+        <h2>Deep Learning Questions</h2>
+
+        <!-- NVIDIA Deep Learning Questions -->
+        <h3>NVIDIA</h3>
+        <ul>
+            <li>Explain the architecture of a convolutional neural network (CNN).</li>
+            <li>What are the common activation functions used in deep learning, and how do they differ?</li>
+            <li>Describe the vanishing gradient problem and how it can be mitigated.</li>
+            <li>What are recurrent neural networks (RNNs), and when would you use them?</li>
+            <li>How do you prevent overfitting in deep learning models?</li>
+        </ul>
+
+        <!-- OpenAI Deep Learning Questions -->
+        <h3>OpenAI</h3>
+        <ul>
+            <li>What is transfer learning, and how is it used in deep learning?</li>
+            <li>Explain how backpropagation works in neural networks.</li>
+            <li>How do GANs (Generative Adversarial Networks) function?</li>
+            <li>What are transformers, and how are they used in language models like GPT?</li>
+            <li>Describe the difference between batch normalization and layer normalization.</li>
+        </ul>
+
+        <!-- Model Evaluation and Performance Questions -->
+        <h2>Model Evaluation and Performance Questions</h2>
+
+        <!-- Uber Model Evaluation Questions -->
+        <h3>Uber</h3>
+        <ul>
+            <li>What is precision, recall, and F1-score, and how do they relate?</li>
+            <li>Explain how ROC and AUC are used to evaluate a model's performance.</li>
+            <li>How do you handle imbalanced datasets in a classification problem?</li>
+            <li>What is the purpose of using a confusion matrix in classification?</li>
+            <li>Explain how you would use cross-validation for model evaluation.</li>
+        </ul>
+
+        <!-- LinkedIn Model Evaluation Questions -->
+        <h3>LinkedIn</h3>
+        <ul>
+            <li>What are some common techniques for feature selection in machine learning?</li>
+            <li>How do you use grid search or random search to optimize hyperparameters?</li>
+            <li>Explain the difference between training error and generalization error.</li>
+            <li>How would you use ensemble methods like bagging or boosting to improve model performance?</li>
+            <li>What are precision-recall trade-offs, and how do they impact model performance?</li>
+        </ul>
+
+        <!-- Algorithms and Techniques Questions -->
+        <h2>Algorithms and Techniques Questions</h2>
+
+        <!-- Netflix Algorithms Questions -->
+        <h3>Netflix</h3>
+        <ul>
+            <li>How does collaborative filtering work in recommendation systems?</li>
+            <li>Explain how support vector machines (SVMs) are used in classification problems.</li>
+            <li>Describe the process of building a recommendation engine from scratch.</li>
+            <li>What is reinforcement learning, and how does it differ from supervised learning?</li>
+            <li>How do you implement a gradient descent algorithm for model optimization?</li>
+        </ul>
+
+        <!-- Tesla Algorithms Questions -->
+        <h3>Tesla</h3>
+        <ul>
+            <li>What are decision boundaries in machine learning models?</li>
+            <li>Explain the use of boosting algorithms like AdaBoost or XGBoost.</li>
+            <li>How do you handle high-dimensional datasets in machine learning?</li>
+            <li>What is the role of the kernel trick in support vector machines (SVMs)?</li>
+            <li>How do ensemble methods reduce bias and variance in models?</li>
+        </ul>
+
+        <!-- Feature Engineering Questions -->
+        <h2>Feature Engineering Questions</h2>
+
+        <!-- Airbnb Feature Engineering Questions -->
+        <h3>Airbnb</h3>
+        <ul>
+            <li>What are the key steps involved in feature engineering?</li>
+            <li>How do you handle categorical data in machine learning models?</li>
+            <li>Explain how you would create features from text data in natural language processing (NLP).</li>
+            <li>What techniques do you use for feature scaling, and why is it important?</li>
+            <li>How do you deal with multicollinearity in a dataset?</li>
+        </ul>
+
+        <!-- Twitter Feature Engineering Questions -->
+        <h3>Twitter</h3>
+        <ul>
+            <li>How do you perform feature selection using techniques like Lasso or Ridge regression?</li>
+            <li>Explain how you handle missing data in your features.</li>
+            <li>What are some methods to create interaction features between different variables?</li>
+            <li>How do you decide which features to drop from a dataset?</li>
+            <li>Explain the role of one-hot encoding and label encoding in categorical feature engineering.</li>
+        </ul>
+        
+    </div>
+</div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="modal" id="softdev-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="softdev-modal">&times;</button>
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                        margin-bottom:20px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+                     margin-bottom: 40px;
+                    }
+           </style>
+           <header>
+            <h1>Software Development Interview Questions</h1>
+            <p>Explore various company-wise interview questions asked in the domain of software development</p>
+           </header>
+        </div>
+        
+       
+
+        <!-- Algorithms Questions -->
+        <h2>Algorithms Questions</h2>
+
+        <!-- Google Algorithms Questions -->
+        <h3>Google</h3>
+        <ul>
+            <li>Explain how you would optimize a sorting algorithm.</li>
+            <li>Describe the time and space complexity of merge sort.</li>
+            <li>How would you find the shortest path in an unweighted graph?</li>
+            <li>Explain dynamic programming and give an example of a problem it solves.</li>
+            <li>How do you detect a cycle in a linked list?</li>
+        </ul>
+
+        <!-- Facebook Algorithms Questions -->
+        <h3>Facebook</h3>
+        <ul>
+            <li>What is the sliding window technique? Give an example where it's useful.</li>
+            <li>Explain the difference between depth-first search (DFS) and breadth-first search (BFS).</li>
+            <li>How would you design a system to search for the shortest prefix match?</li>
+            <li>How do you optimize recursive algorithms to avoid stack overflow?</li>
+            <li>How do you reverse a string using recursion?</li>
+        </ul>
+
+        <!-- Data Structures Questions -->
+        <h2>Data Structures Questions</h2>
+
+        <!-- Amazon Data Structures Questions -->
+        <h3>Amazon</h3>
+        <ul>
+            <li>What data structure would you use to implement a cache?</li>
+            <li>Explain how hash maps work and how you would resolve collisions.</li>
+            <li>Describe the difference between stacks and queues.</li>
+            <li>How would you implement a binary search tree (BST)?</li>
+            <li>What are the benefits and drawbacks of using linked lists over arrays?</li>
+        </ul>
+
+        <!-- Microsoft Data Structures Questions -->
+        <h3>Microsoft</h3>
+        <ul>
+            <li>How would you implement a priority queue?</li>
+            <li>Explain the time complexity of operations on a balanced binary search tree.</li>
+            <li>What is the difference between a red-black tree and an AVL tree?</li>
+            <li>How do you handle collisions in hash tables?</li>
+            <li>What is the use of a trie data structure, and where is it commonly applied?</li>
+        </ul>
+
+        <!-- Object-Oriented Programming (OOP) Questions -->
+        <h2>Object-Oriented Programming (OOP) Questions</h2>
+
+        <!-- Apple OOP Questions -->
+        <h3>Apple</h3>
+        <ul>
+            <li>Explain the four pillars of object-oriented programming.</li>
+            <li>What is polymorphism, and how is it implemented in OOP?</li>
+            <li>How do inheritance and encapsulation work in object-oriented design?</li>
+            <li>Explain method overloading vs. method overriding in OOP.</li>
+            <li>Describe the use of design patterns in object-oriented programming.</li>
+        </ul>
+
+        <!-- Netflix OOP Questions -->
+        <h3>Netflix</h3>
+        <ul>
+            <li>How would you implement an observer pattern in a real-world system?</li>
+            <li>What is the difference between composition and inheritance in OOP?</li>
+            <li>Explain how you would design a system using the singleton pattern.</li>
+            <li>How do abstract classes differ from interfaces?</li>
+            <li>What is dependency injection, and how is it used in OOP?</li>
+        </ul>
+
+        <!-- System Design Questions -->
+        <h2>System Design Questions</h2>
+
+        <!-- LinkedIn System Design Questions -->
+        <h3>LinkedIn</h3>
+        <ul>
+            <li>How would you design a scalable social media platform like LinkedIn?</li>
+            <li>Explain the CAP theorem in distributed systems.</li>
+            <li>What is sharding, and how would you implement it in a large-scale database?</li>
+            <li>Describe how load balancing works in a distributed architecture.</li>
+            <li>How do you design a high-availability system for millions of concurrent users?</li>
+        </ul>
+
+        <!-- Twitter System Design Questions -->
+        <h3>Twitter</h3>
+        <ul>
+            <li>How would you design a system to handle real-time messaging?</li>
+            <li>What is the difference between monolithic and microservices architecture?</li>
+            <li>Explain how you would design a distributed caching system.</li>
+            <li>How do you handle data consistency in distributed systems?</li>
+            <li>What is rate limiting, and how would you design it for a large-scale API?</li>
+        </ul>
+
+        <!-- Databases and SQL Questions -->
+        <h2>Databases and SQL Questions</h2>
+
+        <!-- Oracle Database Questions -->
+        <h3>Oracle</h3>
+        <ul>
+            <li>Explain the ACID properties in a database.</li>
+            <li>What is a database index, and how does it work?</li>
+            <li>How would you optimize a slow-running query in SQL?</li>
+            <li>What is the difference between SQL and NoSQL databases?</li>
+            <li>Explain normalization and denormalization in database design.</li>
+        </ul>
+
+        <!-- Uber SQL Questions -->
+        <h3>Uber</h3>
+        <ul>
+            <li>Write a SQL query to find the second highest salary in a company.</li>
+            <li>How do you optimize a query that involves joining multiple tables?</li>
+            <li>What are window functions in SQL, and how are they used?</li>
+            <li>Explain the use of indexes and how they impact query performance.</li>
+            <li>How would you design a database schema for a ride-sharing application like Uber?</li>
+        </ul>
+
+        <!-- Coding Best Practices Questions -->
+        <h2>Coding Best Practices Questions</h2>
+
+        <!-- Stripe Coding Best Practices Questions -->
+        <h3>Stripe</h3>
+        <ul>
+            <li>What are some coding best practices you follow for clean code?</li>
+            <li>How do you ensure your code is maintainable and easy to read?</li>
+            <li>Explain the importance of code reviews and how they improve software quality.</li>
+            <li>What is test-driven development (TDD), and how do you implement it?</li>
+            <li>How do you handle error handling and logging in your code?</li>
+        </ul>
+
+        <!-- PayPal Coding Best Practices Questions -->
+        <h3>PayPal</h3>
+        <ul>
+            <li>How do you handle security vulnerabilities in your code?</li>
+            <li>What are some common performance optimization techniques you use?</li>
+            <li>How do you approach writing unit tests for complex algorithms?</li>
+            <li>What is continuous integration, and why is it important for software development?</li>
+            <li>How do you manage code dependencies in a large software project?</li>
+        </ul>
+
+    </div>
+</div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------->
+<div class="tech">
+    <h3><b>GOVERNMENT JOBS</b></h3>
+</div>
+<section>
+    <div class="course" id="defence">
+        <h2>Defence</h2>
+        <p>Defence jobs in India are positions in the military or paramilitary forces.  Serving in the army, navy, air force, or other relevant institutions is part of a defence job. </p>
+        <button class="toggle-btn" data-target="defence-modal">Read More</button>
+    </div>
+
+    <div class="course" id="ssc">
+        <h2>SSC</h2>
+        <p>Staff Selection Commission (SSC) is an organisation under the Government of India to recruit staff for various posts in the various ministries and departments of the government of India and in subordinate offices and agencies </p>
+        <button class="toggle-btn" data-target="ssc-modal">Read More</button>
+    </div>
+
+    <div class="course" id="upsc">
+        <h2>UPSC</h2>
+        <p>Union Public Service Commission is the premier recruiting agency for the Government of India. UPSC is responsible for recruiting candidates for All India Services, Central Services, and Cadres, as well as the Armed Forces of the Union of India. </p>
+        <button class="toggle-btn" data-target="upsc-modal">Read More</button>
+    </div>
+</section>
+<!----------------------------------------------------------------------------------------------------------->
+                                       <!----MODAL SECTIONS------>
+    <div class="modal" id="defence-modal">
+        <div class="modal-content">
+            <button class="close-btn" data-close="defence-modal">&times;</button>
+            <div class="header">
+                <style>
+                    .header {
+                            background-color: #F3A953;
+                            color: white;
+                            padding: 10px;
+                            text-align: center;
+                            border-radius: 16px;
+                            margin-left:30px;
+                            margin-right:30px;
+                            margin-top:50px;
+                            margin-bottom:20px;
+                        }
+                        .container {
+                              padding: 20px;
+                         }
+    
+                        .exam-section {
+                margin-bottom: 40px;
+                        }
+               </style>
+               <header>
+                <h1>Jobs Under Indian Defence Exams</h1>
+                <p>Explore different Indian defence exams, jobs, and their respective paper models.</p>
+               </header>
+            </div>
+           
+
+            <!-- Union Public Service Commission (UPSC) - NDA/NA -->
+            <h2>National Defence Academy (NDA) / Naval Academy (NA)</h2>
+            <p>The NDA/NA exam is conducted by UPSC for recruitment to the Army, Navy, and Air Force wings of the NDA and NA.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 16.5 to 19.5 years</li>
+                <li>Educational Qualification: 10+2 for Army, Physics and Maths in 10+2 for Navy and Air Force</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Mathematics:</strong> 300 marks, Objective type, 2.5 hours</li>
+                <li><strong>General Ability Test (GAT):</strong> 600 marks, Objective type, 2.5 hours</li>
+            </ul>
+    
+            <!-- Combined Defence Services (CDS) -->
+            <h2>Combined Defence Services (CDS)</h2>
+            <p>The CDS exam is also conducted by UPSC for recruitment to the Indian Military Academy (IMA), Indian Naval Academy (INA), Air Force Academy (AFA), and Officers' Training Academy (OTA).</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 19 to 24 years</li>
+                <li>Educational Qualification: Graduation or equivalent</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>IMA, INA, AFA:</strong>
+                    <ul>
+                        <li>English: 100 marks, Objective type, 2 hours</li>
+                        <li>General Knowledge: 100 marks, Objective type, 2 hours</li>
+                        <li>Elementary Mathematics: 100 marks, Objective type, 2 hours</li>
+                    </ul>
+                </li>
+                <li><strong>OTA:</strong>
+                    <ul>
+                        <li>English: 100 marks, Objective type, 2 hours</li>
+                        <li>General Knowledge: 100 marks, Objective type, 2 hours</li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <!-- Air Force Common Admission Test (AFCAT) -->
+            <h2>Air Force Common Admission Test (AFCAT)</h2>
+            <p>AFCAT is conducted by the Indian Air Force for recruitment in Flying Branch, Ground Duty (Technical and Non-Technical Branches).</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 20 to 24 years for Flying Branch, 20 to 26 years for Ground Duty</li>
+                <li>Educational Qualification: Graduation or Engineering degree</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>AFCAT Paper:</strong> 100 questions, 300 marks, Objective type, 2 hours</li>
+                <li><strong>EKT (Engineering Knowledge Test):</strong> 50 questions, 150 marks, Objective type, 45 minutes (For technical candidates)</li>
+            </ul>
+    
+            <!-- Indian Coast Guard Assistant Commandant -->
+            <h2>Indian Coast Guard Assistant Commandant</h2>
+            <p>The exam is conducted for recruitment of officers in General Duty, Commercial Pilot License (CPL), and Technical Branches.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 21 to 25 years</li>
+                <li>Educational Qualification: 10+2 with Physics and Maths, or Engineering degree</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Preliminary Exam:</strong> Objective type, covering Mental Ability, Reasoning, General Awareness</li>
+                <li><strong>Final Selection:</strong> Interview, Medical Test, and Physical Fitness Test</li>
+            </ul>
+    
+            <!-- Territorial Army Officer -->
+            <h2>Territorial Army Officer</h2>
+            <p>The Territorial Army exam is conducted for recruitment of part-time officers who can join the army voluntarily.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 42 years</li>
+                <li>Educational Qualification: Graduation in any discipline</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Paper 1:</strong> Reasoning and Elementary Mathematics (100 marks, Objective type)</li>
+                <li><strong>Paper 2:</strong> General Knowledge and English (100 marks, Objective type)</li>
+            </ul>
+    
+            <!-- Indian Navy Sailor Entry (SSR/AA) -->
+            <h2>Indian Navy Sailor Entry (SSR/AA)</h2>
+            <p>SSR (Senior Secondary Recruit) and AA (Artificer Apprentice) are entry-level exams for recruitment in Indian Navy.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 17 to 21 years</li>
+                <li>Educational Qualification: 10+2 with Physics, Chemistry, Maths</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>SSR/AA Paper:</strong> 100 questions, 1 hour, Objective type covering Science, Mathematics, General Knowledge</li>
+            </ul>
+    
+        </div>
+    </div>
+        </div>
+    </div>
+<!----------------------------------------------------------------------------------------------------------->
+<div class="modal" id="ssc-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="ssc-modal">&times;</button>
+
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                        margin-bottom:20px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+            margin-bottom: 40px;
+                    }
+           </style>
+           <header>
+            <h1>Jobs Under SSC Exams</h1>
+            <p>Explore different SSC exams, jobs, and their respective paper models.</p>
+           </header>
+        </div>
+    
+            <!-- SSC Combined Graduate Level (CGL) Exam -->
+            <h2>SSC Combined Graduate Level (CGL) Exam</h2>
+            <p>SSC CGL is conducted for recruitment in Group B and Group C posts in various ministries, departments, and organizations of the Government of India.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 32 years (varies for different posts)</li>
+                <li>Educational Qualification: Graduation in any discipline</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Tier 1 (Objective):</strong> General Intelligence and Reasoning, General Awareness, Quantitative Aptitude, English Comprehension (200 marks, 60 minutes)</li>
+                <li><strong>Tier 2 (Objective):</strong> Quantitative Abilities (200 marks), English Language (200 marks), Statistics (200 marks), General Studies (200 marks)</li>
+                <li><strong>Tier 3 (Descriptive):</strong> Essay/Precis/Letter Writing (100 marks, 60 minutes)</li>
+                <li><strong>Tier 4:</strong> Data Entry Skill Test (DEST) / Computer Proficiency Test (CPT)</li>
+            </ul>
+
+            <!-- SSC Combined Higher Secondary Level (CHSL) Exam -->
+            <h2>SSC Combined Higher Secondary Level (CHSL) Exam</h2>
+            <p>SSC CHSL is conducted for recruitment of Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA), Postal Assistant (PA), Sorting Assistant (SA), and Data Entry Operator (DEO).</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 27 years</li>
+                <li>Educational Qualification: 10+2 or equivalent</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Tier 1 (Objective):</strong> General Intelligence, English Language, Quantitative Aptitude, General Awareness (200 marks, 60 minutes)</li>
+                <li><strong>Tier 2 (Descriptive):</strong> Essay/Letter/Application Writing (100 marks, 60 minutes)</li>
+                <li><strong>Tier 3:</strong> Typing Test/Skill Test (for Data Entry Operators)</li>
+            </ul>
+
+            <!-- SSC Multitasking Staff (MTS) Exam -->
+            <h2>SSC Multitasking Staff (MTS) Exam</h2>
+            <p>SSC MTS is conducted for recruitment of Multitasking Staff in various central government ministries and departments.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 25 years</li>
+                <li>Educational Qualification: Matriculation/10th pass</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Tier 1 (Objective):</strong> General Intelligence and Reasoning, Numerical Aptitude, General English, General Awareness (100 marks, 90 minutes)</li>
+                <li><strong>Tier 2 (Descriptive):</strong> Short Essay/Letter Writing (50 marks, 30 minutes)</li>
+            </ul>
+
+            <!-- SSC Junior Engineer (JE) Exam -->
+            <h2>SSC Junior Engineer (JE) Exam</h2>
+            <p>SSC JE is conducted for recruitment of Junior Engineers in Civil, Mechanical, Electrical, and Quantity Surveying & Contracts.</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 32 years (varies by post)</li>
+                <li>Educational Qualification: Diploma/Degree in Engineering</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Paper 1 (Objective):</strong> General Intelligence and Reasoning, General Awareness, Engineering Subject (200 marks, 2 hours)</li>
+                <li><strong>Paper 2 (Descriptive):</strong> Engineering Subject (300 marks, 2 hours)</li>
+            </ul>
+
+            <!-- SSC General Duty (GD) Constable Exam -->
+            <h2>SSC General Duty (GD) Constable Exam</h2>
+            <p>SSC GD is conducted for recruitment of constables in CAPFs (Central Armed Police Forces), NIA (National Investigation Agency), SSF (Secretariat Security Force), and Rifleman (Assam Rifles).</p>
+            <h3>Eligibility:</h3>
+            <ul>
+                <li>Age: 18 to 23 years</li>
+                <li>Educational Qualification: Matriculation/10th pass</li>
+            </ul>
+            <h3>Paper Model:</h3>
+            <ul>
+                <li><strong>Tier 1 (Objective):</strong> General Intelligence and Reasoning, General Knowledge, Numerical Ability, English/Hindi (100 marks, 90 minutes)</li>
+                <li><strong>Physical Test:</strong> Physical Efficiency Test (PET) and Physical Standard Test (PST)</li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------->
+
+<div class="modal" id="upsc-modal">
+    <div class="modal-content">
+        <button class="close-btn" data-close="upsc-modal">&times;</button>
+        <div class="header">
+            <style>
+                .header {
+                        background-color: #F3A953;
+                        color: white;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 16px;
+                        margin-left:30px;
+                        margin-right:30px;
+                        margin-top:50px;
+                    }
+                    .container {
+                          padding: 20px;
+                     }
+
+                    .exam-section {
+            margin-bottom: 40px;
+                    }
+           </style>
+            <h1>UPSC Exams Information</h1>
+            <p>Explore different UPSC exams, jobs, and their respective paper models.</p>
+        </div>
+    
+        <div class="container">
+            <div class="exam-section">
+                <h2>UPSC Civil Services Exam (CSE)</h2>
+                <p>UPSC CSE is conducted for recruitment to IAS, IPS, IFS, and other central services. It is one of the most prestigious exams in India.</p>
+                <h3>Eligibility:</h3>
+                <ul>
+                    <li>Age: 21 to 32 years</li>
+                    <li>Educational Qualification: Graduation in any discipline</li>
+                </ul>
+                <h3>Paper Model:</h3>
+                <ul>
+                    <li><strong>Preliminary Exam:</strong> 
+                        <ul>
+                            <li>General Studies Paper 1 (200 marks, 2 hours)</li>
+                            <li>General Studies Paper 2 (CSAT) (200 marks, 2 hours, qualifying)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Main Exam:</strong>
+                        <ul>
+                            <li>Essay (250 marks)</li>
+                            <li>General Studies I (250 marks)</li>
+                            <li>General Studies II (250 marks)</li>
+                            <li>General Studies III (250 marks)</li>
+                            <li>General Studies IV (250 marks)</li>
+                            <li>Optional Subject Paper I (250 marks)</li>
+                            <li>Optional Subject Paper II (250 marks)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Personality Test (Interview):</strong> 275 marks</li>
+                </ul>
+            </div>
+    
+            <div class="exam-section">
+                <h2>UPSC Indian Engineering Services (IES/ESE)</h2>
+                <p>UPSC IES exam is conducted for recruitment of engineers in various government departments such as Railways, Central Water Engineering, Defense Services, etc.</p>
+                <h3>Eligibility:</h3>
+                <ul>
+                    <li>Age: 21 to 30 years</li>
+                    <li>Educational Qualification: Engineering degree</li>
+                </ul>
+                <h3>Paper Model:</h3>
+                <ul>
+                    <li><strong>Preliminary Exam:</strong>
+                        <ul>
+                            <li>General Studies and Engineering Aptitude (200 marks, 2 hours)</li>
+                            <li>Engineering Discipline Paper (300 marks, 3 hours)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Main Exam:</strong>
+                        <ul>
+                            <li>Engineering Discipline Paper I (300 marks)</li>
+                            <li>Engineering Discipline Paper II (300 marks)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Personality Test:</strong> 200 marks</li>
+                </ul>
+            </div>
+    
+            <div class="exam-section">
+                <h2>UPSC Combined Defence Services (CDS) Exam</h2>
+                <p>UPSC CDS is conducted for recruitment in the Indian Military Academy (IMA), Indian Naval Academy (INA), Air Force Academy (AFA), and Officers' Training Academy (OTA).</p>
+                <h3>Eligibility:</h3>
+                <ul>
+                    <li>Age: 19 to 25 years</li>
+                    <li>Educational Qualification: Graduation (Engineering for INA, Physics/Math for AFA)</li>
+                </ul>
+                <h3>Paper Model:</h3>
+                <ul>
+                    <li><strong>IMA, INA, AFA:</strong>
+                        <ul>
+                            <li>English (100 marks, 2 hours)</li>
+                            <li>General Knowledge (100 marks, 2 hours)</li>
+                            <li>Mathematics (100 marks, 2 hours)</li>
+                        </ul>
+                    </li>
+                    <li><strong>OTA:</strong>
+                        <ul>
+                            <li>English (100 marks, 2 hours)</li>
+                            <li>General Knowledge (100 marks, 2 hours)</li>
+                        </ul>
+                    </li>
+                    <li><strong>SSB Interview:</strong> 300 marks for IMA, INA, AFA, and 200 marks for OTA</li>
+                </ul>
+            </div>
+    
+            <div class="exam-section">
+                <h2>UPSC Indian Forest Services (IFS) Exam</h2>
+                <p>UPSC IFS exam is conducted for recruitment of officers in the Indian Forest Services to manage forest resources and wildlife.</p>
+                <h3>Eligibility:</h3>
+                <ul>
+                    <li>Age: 21 to 32 years</li>
+                    <li>Educational Qualification: Graduation in science/engineering</li>
+                </ul>
+                <h3>Paper Model:</h3>
+                <ul>
+                    <li><strong>Preliminary Exam:</strong> Same as Civil Services Prelims</li>
+                    <li><strong>Main Exam:</strong>
+                        <ul>
+                            <li>General English (300 marks)</li>
+                            <li>General Knowledge (300 marks)</li>
+                            <li>Optional Subject Paper I (200 marks)</li>
+                            <li>Optional Subject Paper II (200 marks)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Personality Test:</strong> 300 marks</li>
+                </ul>
+            </div>
+    
+            <div class="exam-section">
+                <h2>UPSC Central Armed Police Forces (CAPF) Exam</h2>
+                <p>UPSC CAPF exam is conducted for recruitment of Assistant Commandants in Central Armed Police Forces such as BSF, CRPF, CISF, ITBP, and SSB.</p>
+                <h3>Eligibility:</h3>
+                <ul>
+                    <li>Age: 20 to 25 years</li>
+                    <li>Educational Qualification: Graduation in any discipline</li>
+                </ul>
+                <h3>Paper Model:</h3>
+                <ul>
+                    <li><strong>Paper 1:</strong> General Ability and Intelligence (250 marks, 2 hours)</li>
+                    <li><strong>Paper 2:</strong> General Studies, Essay, and Comprehension (200 marks, 3 hours)</li>
+                    <li><strong>Physical and Medical Test:</strong></li>
+                    <li><strong>Interview/Personality Test:</strong> 150 marks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Career Pathways is dedicated to helping students explore educational and career opportunities.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="way.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="govtjobs.html">Government Jobs</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../IMAGES/face.png" alt="Facebook"></a>
+                    <a href="#"><img src="../IMAGES/twi.png" alt="Twitter"></a>
+                    <a href="#"><img src="../IMAGES/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="../IMAGES/link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Career Pathways. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Interview.js"></script>
+</body>
+</html>
